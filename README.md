@@ -28,10 +28,10 @@ default at launch, and Sessions can be dragged in from the sidebar.
   public `conversation.content` Factory in its `embedded` variant. Streaming,
   the composer, slash commands, approvals, queued turns, todos, and plugin views
   all work per pane.
-- **Drag from the sidebar.** Drag any Session row onto the panel; the whole
-  panel is a forgiving drop surface with a dead band along both dividers, and
-  the nearest pane highlights. Dropping one pane's Session on another swaps
-  them.
+- **Fuzzy drag targets.** Drag any Session row onto the panel: every pane shows
+  its half/quarter label, the zone under the pointer lights up, and a wide dead
+  band along both dividers keeps the target from flickering. Dropping one
+  pane's Session on another swaps them.
 - **Launch by default.** The panel is the main view at page launch, and the
   current workspace group is expanded in the sidebar so rows are ready to drag.
 - **Resize both axes.** Drag the column and row dividers, use the arrow keys on
@@ -56,7 +56,7 @@ dsh plugin --profile desktop add github:kylernunan/dsh-split-session
 From the prebuilt release tarball:
 
 ```sh
-dsh plugin --profile desktop add https://github.com/kylernunan/dsh-split-session/releases/download/v0.3.0/dsh-split-session-0.3.0.tgz
+dsh plugin --profile desktop add https://github.com/kylernunan/dsh-split-session/releases/download/v0.3.1/dsh-split-session-0.3.1.tgz
 ```
 
 From a local checkout:
@@ -87,9 +87,13 @@ dsh plugin --profile desktop remove dsh-split-session
   panes are open).
 - **Switch a pane**: click its title; the picker lists top-level Sessions by
   recent activity.
-- **Drag a Session in**: drag a row from the sidebar onto any pane. Drop on the
-  panel header and the nearest pane wins; drag a pane's Session onto another
-  pane to swap them.
+- **Drag a Session in**: drag a row from the sidebar onto any pane. Each pane
+  labels its half or quarter and highlights under the pointer; drag a pane's
+  Session onto another pane to swap them.
+- **Add by dropping**: while fewer than four panes are open, move the drag onto
+  the panel header — it becomes a **Drop to add a pane** lane — and release to
+  add the dragged Session as a new pane. Repeat to build the quad, then drop
+  Sessions into the labeled quarters.
 - **Resize**: drag a divider, focus it and use the arrow keys (±2%), press
   `Home` or double-click to reset that axis.
 - **Side-by-side / stacked**: for two panes, the panel header toggles the axis.

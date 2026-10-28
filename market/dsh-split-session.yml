@@ -4,7 +4,7 @@
 url: https://github.com/kylernunan/dsh-split-session
 name: kylernunan/dsh-split-session
 category: ui
-tarball: https://github.com/kylernunan/dsh-split-session/releases/download/v0.3.0/dsh-split-session-0.3.0.tgz
+tarball: https://github.com/kylernunan/dsh-split-session/releases/download/v0.3.1/dsh-split-session-0.3.1.tgz
 description:
   en: 'Split session view for the DSH Web GUI: two to four native embedded Conversations in one window, drag Sessions from the sidebar onto any pane, and a layout that persists per browser.'
   zh: 'DSH 网页端分屏会话视图：一个窗口内最多四个原生嵌入会话，可从侧边栏拖入任意窗格，布局按浏览器保存。'

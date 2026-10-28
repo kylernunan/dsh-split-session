@@ -1,6 +1,6 @@
 {
   "name": "dsh-split-session",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Quad-pane split session view for the DeepSeek Harness Web GUI: up to four live Conversations, launch by default, drag Sessions in from the sidebar.",
   "type": "module",
   "main": "lib/index.js",
