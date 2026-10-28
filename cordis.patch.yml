@@ -1,0 +1,5 @@
+# Bundle layer for the split-session plugin. Installing this package into a
+# profile appends it to `dsh.profile.bundles`, which applies this row.
+- insert:
+    - id: split-session
+      name: dsh-split-session

@@ -1,0 +1,56 @@
+{
+  "name": "dsh-split-session",
+  "version": "0.3.0",
+  "description": "Quad-pane split session view for the DeepSeek Harness Web GUI: up to four live Conversations, launch by default, drag Sessions in from the sidebar.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "icon": "./icon.svg",
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "license": "MIT",
+  "scripts": {
+    "smoke": "node scripts/smoke.mjs"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "split-view",
+    "quad-view",
+    "multi-session",
+    "web-ui"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kylernunan/dsh-split-session.git"
+  },
+  "homepage": "https://github.com/kylernunan/dsh-split-session#readme",
+  "bugs": {
+    "url": "https://github.com/kylernunan/dsh-split-session/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
