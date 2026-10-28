@@ -46,23 +46,29 @@ default at launch, and Sessions can be dragged in from the sidebar.
 
 ## Install
 
-From npm (when published):
-
-```sh
-dsh plugin --profile desktop add dsh-split-session
-```
-
-Directly from GitHub (the checkout ships the built client bundle, so no build
-step runs):
+From GitHub (the checkout ships the built client bundle, so no build step
+runs):
 
 ```sh
 dsh plugin --profile desktop add github:kylernunan/dsh-split-session
+```
+
+From the prebuilt release tarball:
+
+```sh
+dsh plugin --profile desktop add https://github.com/kylernunan/dsh-split-session/releases/download/v0.3.0/dsh-split-session-0.3.0.tgz
 ```
 
 From a local checkout:
 
 ```sh
 dsh plugin --profile desktop add /path/to/dsh-split-session
+```
+
+From npm, once published:
+
+```sh
+dsh plugin --profile desktop add dsh-split-session
 ```
 
 Then reload the page (or restart the app). Toggle it later under
@@ -137,9 +143,11 @@ smaller and native-rendered:
 
 | Plugin | Shape |
 | --- | --- |
+| [`mhlywxl/dsh-split-workspace`](https://github.com/mhlywxl/dsh-split-workspace) | Unlimited native panes, side-by-side, stacked, 2×2 and automatic grids. Closest overlap. |
 | [`dsh-split-screen`](https://www.npmjs.com/package/dsh-split-screen) | Native panes, drag-to-edge splitting, many panes, always-on workspace. |
 | [`dsh-split-view`](https://www.npmjs.com/package/dsh-split-view) | Nested splits, one full DSH client per iframe, hibernation, settings. |
 | [`@syncended/dsh-split-screen`](https://www.npmjs.com/package/@syncended/dsh-split-screen) | iTerm-style multiplexer, nested splits, tabs, up to 12 panes. |
+| [`yuloop/dsh-web-split`](https://github.com/yuloop/dsh-web-split) | Draggable panes with unread dots and per-browser layout. |
 | **dsh-split-session** | Quad cap, native embedded Conversations, launch-default, sidebar drag, zero external peers. |
 
 ## Files
