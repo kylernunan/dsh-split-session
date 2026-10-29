@@ -1,6 +1,6 @@
-# Entry for the community DSH plugin index (awesome-dsh-plugin format 1).
-# Submit as data/plugins/kylernunan__dsh-split-session.yml in a PR once the
-# repository is at least one day old.
+# Optional entry for the community DSH plugin index (awesome-dsh-plugin format 1).
+# Not submitted: the index already lists mhlywxl/dsh-split-workspace, which
+# covers native multi-pane splitting incl. 2x2 more broadly. Kept for future use.
 url: https://github.com/kylernunan/dsh-split-session
 name: kylernunan/dsh-split-session
 category: ui
